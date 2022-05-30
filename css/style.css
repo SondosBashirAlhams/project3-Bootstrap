@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #555!important;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: white ;
+}
+
+/* ****************************************************************************************************************************************************/
+
+ .nav1{
+    opacity:0.8;
+   
+}
+.navbar-1{
+    border-right:1px solid #ccc;
+     padding-right: 10px;
+      font-weight: bold;
+}
+.dropdown-menu li a{
+    text-shadow: 1px 1px 0px #CCCCFF;
+}
+.dropdown-menu li a:hover{
+    color: white;
+}
+.carousel-inner h1{
+    text-shadow: 1px 1px #333;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 7px;
+}
+.card{
+    border-top-right-radius:0 ;
+    border-top-left-radius: 0;
+}
+.cards{
+   padding: 20px;
+}
+.card-body h2{
+    font-size: 40px;
+}
+code{
+    font-size: 18px;
+}
+.fac{
+    height:30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 17px;
+    align-self: center;
+}
+.picture{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 250px;
+    }
+.picture1{
+background-image: url(../pictures/picture.jpg);
+}
+.picture2{
+background-image: url(../pictures/images.jpg);
+}
+.btns{
+    position: relative;
+    left: 30px;
+}
+.btns::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent lightblue transparent;
+top: 20px;
+left: 13px;
+display: none;
+}
+.btns::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 80px;
+background-color: lightblue;
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.btns:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btns:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btns:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px white,
+                -10px -10px 20px white;
+} 
+.Goodbasic{
+    background-color: #555; 
+    border-radius: 7px;
+}
+.cardss{
+    width: 18rem;
+}
+.cardsss{
+   margin-top: 50px;
+}
+.items{
+    background-color: #fff;
+}
+/* media   *********************************************************************************************************************************** */
+
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+@media (min-width:990px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
